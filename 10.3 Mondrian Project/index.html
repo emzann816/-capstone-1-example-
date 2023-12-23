@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .grid-containter {
+      display: grid;
+      background-color:black;
+      grid-template-columns: 200px minmax(200px, 300px) 300px;
+      grid-template-rows: 200px 165px minmax(150px, 200px);
+      grid-auto-rows: 300px;
+      gap: 10px
+    }
+    .red {
+      background-color: red;
+      padding: 15px 15px 15px 15px;
+      grid-area: 1/3/3/4;
+      grid-row: span 2;
+        
+    }
+    .yellow {
+      background-color: yellow;
+      padding: 15px 15px 15px 15px;
+      grid-area: 1/4/3/3;
+      grid-column-start:1 ;
+      grid-column-end:3 ;
+        
+    }
+
+    .orange {
+      background-color: orange;
+      padding: 15px 15px 15px 15px;
+      grid-area: 2/4/3/4;
+      grid-column-start:3 ;
+      grid-column-end: 1;
+        
+    }
+    .white {
+      background-color: white;
+      padding: 15px 15px 15px 15px;
+      grid-column-start:1 ;
+      grid-column-end: 3;
+    
+        
+    }
+    .green{
+      background-color: green;
+      padding: 15px 15px 15px 15px;
+      grid-column-start:4 ;
+      grid-column-end: 3;
+    
+        
+    }
+    .blue {
+      background-color: #004592;
+      padding: 15px 15px 15px 15px;
+      grid-column-start:3 ;
+      grid-column-end: 4;
+      grid-area: 1/3/2/4;
+    }
+    .violet {
+      background-color: violet;
+      padding: 15px 15px 15px 15px;
+      grid-column-start:1 ;
+      grid-column-end: 4;
+      grid-area: 4/1/4/2;
+    }
+    .lightgrey{
+      background-color: lightgray;
+      padding: 15px 15px 15px 15px;
+      grid-column-start:1 ;
+      grid-column-end: 4;
+      grid-area: 4/2/4/2;
+    }
+    .items {
+      font-size: 5rem;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flexbox;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-containter">
+    <div class="items red"></div>
+    <div class="items yellow"></div>
+    <div class="items orange"></div>
+    <div class="items white"></div>
+    <div class="items green"></div>
+    <div class="items blue"></div>
+    <div class="items violet"></div>
+    <div class="items lightgrey"></div>
+
+  </div>
+</body>
+
+</html>
